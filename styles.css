@@ -1,0 +1,67 @@
+/* Common styles for both modes */
+body {
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smooth mode change */
+  margin: 0; /* Reset default margin for body */
+}
+
+/* Button styles */
+#dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+#dark-mode-toggle i {
+  margin-right: 5px;
+}
+
+/* Footer styles for both modes */
+footer {
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for smooth mode change */
+  padding: 1rem; /* Add some padding to the footer */
+}
+
+/* Text within the span in the footer */
+footer .text-body-secondary {
+  color: #ffffff; /* Set text color to white for both modes */
+}
+
+/* Ability name styles */
+.pokemon-abilities li strong {
+    font-weight: bold !important;
+  }
+  ;
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Adjust footer color in dark mode */
+body.dark-mode footer {
+  background-color: #121212;
+}
+
+/* Common styles for both modes */
+.footer-image {
+  transition: filter 0.3s; /* Add transition for smooth mode change */
+}
+
+/* Light Mode Styles */
+.light-mode .footer-image {
+  filter: brightness(0) invert(1); /* Apply filter for light mode */
+}
+
+/* Dark Mode Styles */
+.dark-mode .footer-image {
+  filter: none; /* Remove filter for dark mode */
+}
